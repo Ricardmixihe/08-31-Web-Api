@@ -7,13 +7,36 @@
     <title>Document</title>
 </head>
 <body>
+    <input type="text" value="hehe">
+    <input type="radio" class="r1">
+    <input type="checkbox" class="r2">
     <script>
         //1.获取表单标签内容属性
-            //a)I获取表单标签中的文字内容 
-            //b)设置表单标签中的文字内容
+            //a)I获取表单标签中的文字内容   DOM标签对象.value
+                // let int = document.querySelector('input');//返回文档中匹配指定 CSS选择器的一个元素。!!注意仅仅返回匹配指定选择器的第一个元素
+                //     int.value
+                //     console.log(int.value);
+            //b)设置表单标签中的文字内容    D0M标签对象.value=值；
+                // let int = document.querySelector('input');//返回文档中匹配指定 CSS选择器的一个元素。!!注意仅仅返回匹配指定选择器的第一个元素
+                //     int.value=123
 
-            
-        //2,操作表单标签是否选中属性
+                // 注意：非表单元素操作内容是否可以使用value属性?  不能！！！
+                // 因为：非表单元素中不支持value属性
+
+
+        //2,操作表单标签是否选中属性    
+        // a) 获取标签是未被选中   DOM标签对象.checked
+        //如果返回的结果是false,代表当前标签未被选中
+        //如果返回的结果是true,代表当前表外被选中
+                // let r1 = document.querySelector('.r1');//返回文档中匹配指定 CSS选择器的一个元素。!!注意仅仅返回匹配指定选择器的第一个元素
+                // console.log( r1.checked)
+                // let r2 = document.querySelector('.r2');//返回文档中匹配指定 CSS选择器的一个元素。!!注意仅仅返回匹配指定选择器的第一个元素
+                // console.log(r2.checked);
+
+        //b)设置标签选中
+            // DOM标签对象，checked=true; 
+            // 设置为选 DoM标签对象，checked=false; 未被选中
+
 
         //3。操作表单按钮是否可以点击属性
 
