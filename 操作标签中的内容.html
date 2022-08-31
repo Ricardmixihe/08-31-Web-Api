@@ -22,8 +22,14 @@
         // 代码演示：获取div标签中的内容
         let div = document.querySelector('div');
         let res = div.innerHTML;
-        // let res = div.innerText;
+        let res1 = div.innerText;
         console.log(res);
+        console.log(res1);
+
+
+        //b)给标签设置内容 
+        // 1) DoM标签对象，innerText=值；      设置的内容始终都是以纯文本的形式设置 
+        // 2)DoM对象.innerHTML=值；            设置的内容中如果包含html标签，则会将html标签渲染为html标签
     </script>
 </body>
 </html>
