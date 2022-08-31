@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: url('./images/desktop_1.jpg') no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <script>
+        let ary = ['./images/desktop_1.jpg','./images/desktop_2.jpg','./images/desktop_3.jpg','./images/desktop_4.jpg','./images/desktop_5.jpg','./images/desktop_6.jpg','./images/desktop_7.jpg',]
+        let i = Math.floor(Math.random()* ary.length);//随机Max为到最大值,最小为min
+        let src = ary[i]
+        let body = document.querySelector('body');//返回文档中匹配指定 CSS选择器的一个元素。!!注意仅仅返回匹配指定选择器的第一个元素
+        body.style.backgroundImage = `url(${src})`;
+
+
+    </script>
+</body>
+</html>
