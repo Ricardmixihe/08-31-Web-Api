@@ -10,6 +10,7 @@
     <input type="text" value="hehe">
     <input type="radio" class="r1">
     <input type="checkbox" class="r2">
+    <input type="button" class="btn" value="按钮" >
     <script>
         //1.获取表单标签内容属性
             //a)I获取表单标签中的文字内容   DOM标签对象.value
@@ -38,9 +39,11 @@
             // 设置为选 DoM标签对象，checked=false; 未被选中
 
 
-        //3。操作表单按钮是否可以点击属性
-
-
+        //3.操作表单按钮是否可以点击属性
+            //a)获取按钮点击状态：DoM标签对象.disabled
+            //b)设置按钮点击状态： D0M标签对象.disabled
+        let btn = document.querySelector('.btn');//返回文档中匹配指定 CSS选择器的一个元素。!!注意仅仅返回匹配指定选择器的第一个元素
+        console.log(btn.disabled);
 
 
 
