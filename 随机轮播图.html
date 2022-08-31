@@ -136,14 +136,15 @@
         let obj = sliderData[i];
             // 给图片设置路径
         img.src = obj.url;
-        console.log(obj.url);
-    //功能2：随机显示标题（先随机从数组中获取标题文字，然后将标题文字设置给标签
-
-
-
-
+    //功能2：随机显示标题（先随机从数组中获取标题文字，然后将标题文字设置给p标签
+        let title = obj.title;
+        let p = document.querySelector('.slider-footer p');//返回文档中匹配指定 CSS选择器的一个元素。!!注意仅仅返回匹配指定选择器的第一个元素
+            p.innerHTML = title;
 
     //功能3：随机改变1i标签样式（给对应的li标签添加active类名）
+        let li = document.querySelector(`li:nth-child(${i+1})`);//返回文档中匹配指定 CSS选择器的一个元素。!!注意仅仅返回匹配指定选择器的第一个元素
+        li.classList.add('active')
+
    
   </script>
 </body>
