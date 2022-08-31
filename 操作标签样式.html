@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <script>
+        //操作标签样式
+            // a)行内样式
+            // 语法：DOM标签对象.style.css属性 = 值;
+            //注意：
+            // 1.对象中包含该属性，可以使用，如果不包含则不能用 
+            // 2.在css属性中如果遇到background-color在js中都按照backgroundColor
+            let div = document.querySelector('div');
+                div.style.backgroundColor = 'red';
+   
+        let a =  document.querySelector('div');//返回文档中匹配指定 CSS选择器的一个元素。!!注意仅仅返回匹配指定选择器的第一个元素
+        console.log(a);
+
+
+            // b)类样式
+             </script>   
+</body>
+</html>
