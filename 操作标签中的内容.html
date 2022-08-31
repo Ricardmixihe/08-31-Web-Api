@@ -7,12 +7,22 @@
     <title>Document</title>
 </head>
 <body>
+    <div>
+        <p>
+            <a href=""></a>
+        </p>
+    </div>
     <script>
 
         // 操作标签中的内容： 
         // a)获取标签中的内容 
         // 语法1:dom对象.innerText
         // 语法2:dom对象.innerHtml
+
+        // 代码演示：获取div标签中的内容
+        let div = document.querySelector('div');
+        let res = div.innerText;
+        console.log(res);
     </script>
 </body>
 </html>
