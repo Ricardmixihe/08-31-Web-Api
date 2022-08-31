@@ -17,7 +17,14 @@
     </style>  
 </head>  
 <body>  
-    <div id="triangle"></div>
+    <div id="triangle">
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
     <script>
         // 获取页面中的标签（元素）
         // a)语法：document.querySelector('css选择器')
@@ -27,19 +34,18 @@
 
         // 结论：document,querySelector()一次只能获取一个标签,返回满足条件的第一个
         // 通过其他方式获取标签： 
-        // 语法：document.querySelectorA.1l('css选择器')；
-
-
+        // 语法：document.querySelectorA.1l('css选择器');
+        // var p =  document.getQuerySelectorAll("p");//接收的参数是一个 CSS 选择符。
+        // console.log(p);
         // 总结： 
         // a)返回的结果是一个伪数组（可以像数组一样遍历，但是不能使用数组中的方法）
         // b)伪数组中保存的每一个值都是一个标签对象
-        // c) document.querySelectorAll;返回的结果永远都是一个伪数组 v
-
-
-
-document.write();
-        // let div = document.querySelector('div')
-        // console.log(div);
+        // c) document.querySelectorAll;返回的结果永远都是一个伪数组 
+        let p = document.querySelectorAll('p');//接收的参数是一个 CSS 选择符。生成一个伪数组
+console.log(p);
+// document.write();
+        let div = document.querySelectorAll('div')
+        console.log(div);
     </script>
 </body>
 </html>
